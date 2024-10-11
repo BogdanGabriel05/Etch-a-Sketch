@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.centering-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
