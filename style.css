@@ -21,3 +21,9 @@
     height: 600px;
     border: 1px solid black;
 }
+
+.firstDiv {
+    width: 37.25px;
+    height: 37.25px;
+    background-color: red;
+}
