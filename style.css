@@ -17,13 +17,13 @@
 }
 
 .container {
-    width: 600px;
-    height: 600px;
+    width: 602px;
+    height: 602px;
     border: 1px solid black;
 }
 
-.firstDiv {
-    width: 37.25px;
-    height: 37.25px;
-    background-color: red;
+.newDiv {
+    width: 37.5px;
+    height: 37.5px;
+    border: 1px solid black;
 }
