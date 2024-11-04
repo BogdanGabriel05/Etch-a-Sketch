@@ -4,6 +4,7 @@
 const container = document.querySelector(".container");
 
 //Create 16x16 divs
+function byDefault() {
 for(let i = 1; i <= 256; i++) {
     const newDivs = document.createElement("div");
     newDivs.classList.add("newDivs");
@@ -11,33 +12,35 @@ for(let i = 1; i <= 256; i++) {
 
 //random color
 function bgColor() {
-const randomColor = Math.floor(Math.random()*16777215).toString(16);
-newDivs.style.backgroundColor = "#" + randomColor;
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    newDivs.style.backgroundColor = "#" + randomColor;
 }
 
  //Mouseenter Event
 newDivs.addEventListener("mouseenter", bgColor)
 // //Mouseleave Event
 newDivs.addEventListener("mouseleave", bgColor)
-
 }
-    
-
-
-
-
-
-
-
-
-
-
-//button 
-const btn = document.querySelector(".btn");
-btn.addEventListener("click", userNumber);
-function userNumber() {
-    prompt("Enter number!")
 }
+byDefault();
+  //button 
+  const btn = document.querySelector(".btn");
+  btn.addEventListener("click", userNumber);
+  function userNumber() {
+      const number = prompt("Enter number!")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
