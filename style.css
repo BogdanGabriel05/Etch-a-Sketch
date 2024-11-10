@@ -30,3 +30,10 @@
     border: 1px solid black;
 }
 
+.newDivs100 {
+    width: 37.5px;
+    height: 37.5px;
+    border: 1px solid black;
+    flex: 1;
+}
+

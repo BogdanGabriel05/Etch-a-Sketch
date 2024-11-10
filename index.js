@@ -16,19 +16,44 @@ function bgColor() {
     newDivs.style.backgroundColor = "#" + randomColor;
 }
 
- //Mouseenter Event
+//Mouseenter Event
 newDivs.addEventListener("mouseenter", bgColor)
-// //Mouseleave Event
+// Mouseleave Event
 newDivs.addEventListener("mouseleave", bgColor)
 }
 }
-byDefault();
-  //button 
-  const btn = document.querySelector(".btn");
-  btn.addEventListener("click", userNumber);
-  function userNumber() {
-      const number = prompt("Enter number!")
+
+function userDivs() {
+    const btn = document.querySelector(".btn");
+    btn.addEventListener("click", function(event){
+    event.preventDefault();
+
+    const number = prompt("Enter number!")
+    for(let i = 1; i <= Number(number); i++) {
+        const newDivs100 = document.createElement("div");
+        newDivs100.classList.add("newDivs100");
+        container.appendChild(newDivs100);
+
+        //random color
+        function bgColor() {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            newDivs100.style.backgroundColor = "#" + randomColor;
+        }
+
+        //Mouseenter Event
+        newDivs100.addEventListener("mouseenter", bgColor)
+        // Mouseleave Event
+        newDivs100.addEventListener("mouseleave", bgColor)
     }
+    });
+}
+
+userDivs();
+// byDefault();
+
+
+
+
 
 
 
